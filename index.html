@@ -251,6 +251,7 @@
                       throw "XSS is not allowed";
                   }
               }
+/*
               var should_invalidate_cache = true;
 
               var special_cache_string = "1";
@@ -259,6 +260,7 @@
                 special_cache_string = "" + (new Date()).getTime();
                 url += ((/\?/).test(url) ? "&" : "?") + special_cache_string;
               }
+*/
               var xhr = new XMLHttpRequest();
               xhr.open('GET', url, true);
               xhr.responseType = 'arraybuffer';
